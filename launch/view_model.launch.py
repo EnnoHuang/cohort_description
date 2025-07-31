@@ -25,7 +25,7 @@ def generate_launch_description():
     description_pkg = get_package_share_directory("arcs_cohort_description")
 
     # Defaults
-    default_model_file = "description/robot.urdf.xacro"
+    default_model_file = "description/robot1.urdf.xacro"
     default_rviz_config_file = os.path.join(
         get_package_share_directory(rviz_pkg), "rviz", "cohort_default.rviz"
     )
