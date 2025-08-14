@@ -12,9 +12,9 @@
     <xacro:include filename="robot1_core.xacro"/>
     <!-- <xacro:include filename="vectornav_imu.xacro"/> -->
     <xacro:include filename="robot1_zed_camera.xacro"/>
-    <xacro:if value="$(arg use_lidar)">
+    <!-- <xacro:if value="$(arg use_lidar)">
         <xacro:include filename="lidar.xacro"/>
-    </xacro:if>
+    </xacro:if> -->
 
     <!-- Build robot model -->
     <xacro:robot_description prefix="$(arg prefix)" camera_name="$(arg camera_name)" camera_model="$(arg camera_model)"/>
