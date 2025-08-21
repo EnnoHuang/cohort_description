@@ -30,6 +30,14 @@
       <color rgba="1 0 0 1"/>
     </material>
 
+    <link name="${prefix_}base_footprint"/>
+
+    <joint name="${prefix_}base_joint" type="fixed">
+      <parent link="${prefix_}base_footprint"/>
+      <child link="${prefix_}base_link"/>
+      <origin xyz="0.12 0.0 0.0" rpy="0 0 0"/>
+    </joint>
+
     <link
       name="${prefix_}base_link">
       <inertial>
